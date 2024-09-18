@@ -22,6 +22,7 @@ button {
     color: #323131; /* Text color in option boxes */
     border: none;
     border-radius: 5px; /* Optional: To make the buttons look nicer */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
 }
 
 button:hover {
