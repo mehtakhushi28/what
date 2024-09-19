@@ -7,7 +7,7 @@ body {
     margin: 0;
     background-color: #323131; /* Background color */
     color: #E8E8E8; /* Text color */
-    cursor: url('pixel-heart.png'), auto; /* Red heart cursor */
+    cursor: url('pixel-heart.png') 16 16, auto; /* Red heart cursor */
 }
 
 #question-screen {
@@ -23,7 +23,7 @@ button {
     margin: 10px;
     padding: 10px 20px;
     font-size: 37px; /* Font size for text in buttons */
-    cursor: url('pixel-heart.png'), auto; /* Red heart cursor */
+    cursor: url('pixel-heart.png') 16 16, auto; /* Red heart cursor */
     background-color: #E8E8E8; /* Option box background color */
     color: #323131; /* Text color in option boxes */
     border: none;
@@ -71,17 +71,11 @@ button:hover {
     border-right: 0.15em solid #FFFFFF; /* Cursor effect */
     white-space: nowrap; /* Prevent text from wrapping */
     overflow: hidden; /* Hide overflow */
-    animation: typewriter 6s steps(40, end) 1s infinite, pause 8s 15s infinite; /* Infinite typewriter effect with pause */
+    animation: typewriter 6s steps(40, end) 1s infinite alternate; /* Typewriter effect with pause */
 }
 
+/* Typewriter keyframe */
 @keyframes typewriter {
-    from { width: 0; }
-    to { width: 100%; }
+    0% { width: 0; }
+    100% { width: 100%; }
 }
-
-@keyframes pause {
-    0% { opacity: 1; }
-    100% { opacity: 1; }
-}
-
-
