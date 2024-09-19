@@ -84,7 +84,7 @@ button:hover {
     width: 100%; /* Full width of the container */
     overflow: hidden; /* Hide overflow */
     margin-top: 40px; /* Space above the image row */
-    position: relative;
+    white-space: nowrap; /* Prevent images from wrapping to the next line */
 }
 
 .image-row img {
@@ -104,6 +104,8 @@ button:hover {
 }
 
 /* Apply animation to the image row */
-.image-row {
+.image-row-wrapper {
+    display: flex;
+    width: 200%; /* Double the width of the image row to allow scrolling */
     animation: scroll-left 30s linear infinite; /* Animation properties */
 }
