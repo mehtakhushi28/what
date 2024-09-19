@@ -15,13 +15,13 @@ body {
 }
 
 h1 {
-    font-size: 62px; /* Text size for the main heading */
+    font-size: 100px; /* Text size for the main heading */
 }
 
 button {
     margin: 10px;
     padding: 10px 20px;
-    font-size: 37px; /* Font size for text in buttons */
+    font-size: 65px; /* Font size for text in buttons */
     cursor: pointer;
     background-color: #E8E8E8; /* Option box background color */
     color: #323131; /* Text color in option boxes */
@@ -58,16 +58,19 @@ button:hover {
     flex-direction: column;
     align-items: center;
     gap: 40px; /* Increase space between the two sentences */
-    max-width: 90%; /* Ensure text doesn't exceed screen width */
+}
+
+#text-content h2 {
+    font-size: 2.5em; /* Adjust the size as needed */
+    margin-bottom: 20px; /* Space between heading and text */
 }
 
 .typewriter {
-    font-size: 2em; /* Adjust as needed */
+    font-size: 2em; /* Increase the size of the text */
     border-right: 0.15em solid #FFFFFF; /* Cursor effect */
-    white-space: normal; /* Allow text to wrap */
+    white-space: nowrap; /* Prevent text from wrapping */
     overflow: hidden; /* Hide overflow */
-    text-align: center; /* Center the text */
-    max-width: 100%; /* Ensure text stays within the container */
+    animation: typewriter 6s steps(40, end) 1s infinite, pause 8s 15s infinite; /* Infinite typewriter effect with pause */
 }
 
 @keyframes typewriter {
