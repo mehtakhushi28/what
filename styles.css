@@ -31,9 +31,17 @@ button:hover {
 
 #next-screen {
     text-align: center;
-    background-color: #FFC0CB; /* Pink background color */
-    padding: 20px;
-    position: relative;
+    background-color: #FF69B4; /* Hot pink background color */
+    color: #FFFFFF; /* Optional: Text color to contrast with the hot pink background */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    display: flex; /* Flexbox for centering content */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden; /* To hide any overflow of moving text */
 }
 
 #next-screen h2, #next-screen p {
