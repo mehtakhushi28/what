@@ -3,7 +3,7 @@ const option1 = document.getElementById("option-1");
 const option2 = document.getElementById("option-2");
 const questionScreen = document.getElementById("question-screen");
 const nextScreen = document.getElementById("next-screen");
-const backgroundMusic = document.getElementById("background-music");
+const careless = document.getElementById("careless"); // Updated to match the id in index.html
 
 // Function to move the first option randomly on the screen
 function moveOption1() {
