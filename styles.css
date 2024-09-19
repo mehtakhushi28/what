@@ -36,30 +36,34 @@ button:hover {
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
     display: flex; /* Flexbox for centering content */
+    flex-direction: column; /* Stack elements vertically */
     justify-content: center;
     align-items: center;
     position: absolute;
     top: 0;
     left: 0;
     overflow: hidden; /* To hide any overflow of moving text */
-}
-
-#next-screen h2, #next-screen p {
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-@keyframes slide {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+    padding: 20px; /* Padding for some spacing around the content */
 }
 
 #next-screen h2 {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2em; /* Adjust the size as needed */
     display: inline-block;
     animation: slide 10s linear infinite;
 }
 
 #next-screen p {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.5em; /* Increase the size of the paragraph text */
     display: inline-block;
     animation: slide 15s linear infinite;
+    margin-top: 20px; /* Increase space between heading and paragraph */
+}
+
+@keyframes slide {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
 }
