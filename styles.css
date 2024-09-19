@@ -1,5 +1,5 @@
 body {
-    font-family: 'Pacifico', cursive; /* Apply Pacifico font */
+    font-family: 'Playfair Display', serif; /* Apply Playfair Display font on the first page */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,8 +30,8 @@ button:hover {
 }
 
 #next-screen {
-    background-color: #FF69B4; /* Hot pink background color */
-    color: #FFFFFF; /* Text color to contrast with the hot pink background */
+    background-color: #303D6F; /* Updated background color */
+    color: #FFFFFF; /* Text color to contrast with the background */
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
     display: flex; /* Flexbox for centering content */
@@ -45,6 +45,7 @@ button:hover {
     padding: 20px; /* Padding for some spacing around the content */
     box-sizing: border-box; /* Include padding in width and height */
     text-align: center; /* Ensure text is centered within its container */
+    font-family: 'Silkscreen', sans-serif; /* Apply Silkscreen font */
 }
 
 #next-screen h2, #next-screen p {
@@ -53,19 +54,20 @@ button:hover {
 }
 
 #next-screen h2 {
-    font-size: 2em; /* Adjust the size as needed */
+    font-size: 2.5em; /* Adjust the size as needed */
     display: inline-block;
-    animation: slide 10s linear infinite;
+    animation: typewriter 4s steps(40, end) infinite; /* Typewriter effect */
+    margin-bottom: 20px; /* Space between heading and paragraph */
 }
 
 #next-screen p {
-    font-size: 1.5em; /* Increase the size of the paragraph text */
+    font-size: 2em; /* Increase the size of the paragraph text */
     display: inline-block;
-    animation: slide 15s linear infinite;
-    margin-top: 20px; /* Increase space between heading and paragraph */
+    animation: typewriter 6s steps(40, end) infinite; /* Typewriter effect */
+    margin-top: 20px; /* Space between heading and paragraph */
 }
 
-@keyframes slide {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
 }
