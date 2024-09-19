@@ -48,22 +48,22 @@ button:hover {
     font-family: 'Silkscreen', sans-serif; /* Apply Silkscreen font */
 }
 
-#next-screen h2, #next-screen p {
-    overflow: hidden;
-    white-space: nowrap;
-    display: inline-block;
-    position: relative;
-    animation: typewriter 6s steps(40, end) 1s 1 normal both, pause 8s 6s forwards; /* Adjust timing and add pause */
+#text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#next-screen h2 {
+#text-content h2 {
     font-size: 2.5em; /* Adjust the size as needed */
     margin-bottom: 20px; /* Space between heading and paragraph */
 }
 
-#next-screen p {
-    font-size: 2em; /* Increase the size of the paragraph text */
-    margin-top: 20px; /* Space between heading and paragraph */
+.typewriter {
+    font-size: 2em; /* Increase the size of the text */
+    display: inline-block;
+    animation: typewriter 6s steps(40, end) 1 normal both, pause 8s 6s forwards; /* Typewriter effect with pause */
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
 @keyframes typewriter {
