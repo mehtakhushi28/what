@@ -1,5 +1,5 @@
 body {
-    font-family: 'Playfair Display', serif; /* Apply Playfair Display font on the first page */
+    font-family: 'Playfair Display', serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@ button {
     color: #323131; /* Text color in option boxes */
     border: none;
     border-radius: 5px; /* Optional: To make the buttons look nicer */
-    transition: all 0.8s ease; /* Smooth transition for all properties */
+    transition: all 0.9s ease; /* Smooth transition for all properties */
 }
 
 button:hover {
@@ -59,27 +59,47 @@ button:hover {
     flex-direction: column;
     align-items: center;
     gap: 40px; /* Increase space between the two sentences */
-}
-
-#text-content h2 {
-    font-size: 2.5em; /* Adjust the size as needed */
-    margin-bottom: 20px; /* Space between heading and text */
+    width: 80%; /* Adjust width to fit within the container */
 }
 
 .typewriter {
-    font-size: 2em; /* Increase the size of the text */
+    font-size: 2em; /* Maintain current font size */
     border-right: 0.15em solid #FFFFFF; /* Cursor effect */
-    white-space: nowrap; /* Prevent text from wrapping */
+    white-space: normal; /* Allow text to wrap to the next line */
     overflow: hidden; /* Hide overflow */
-    animation: typewriter 6s steps(40, end) 1s infinite, pause 8s 15s infinite; /* Infinite typewriter effect with pause */
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure text stays within the container */
+    max-width: 100%; /* Ensure text stays within the container */
+    margin: 0 auto; /* Center the text block */
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite, pause 8s step-end 1; /* Typewriter effect and pause */
 }
 
-@keyframes typewriter {
-    from { width: 0; }
-    to { width: 100%; }
+/* Keyframes for typewriter effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
+/* Keyframes for blinking cursor */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #FFFFFF;
+    }
+}
+
+/* Keyframes for pause effect */
 @keyframes pause {
-    0% { opacity: 1; }
-    100% { opacity: 1; }
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
 }
