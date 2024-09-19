@@ -78,3 +78,18 @@ button:hover {
     0% { width: 0; }
     100% { width: 100%; }
 }
+
+.image-row {
+    display: flex;
+    justify-content: space-between; /* Distribute space between images */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    width: 100%; /* Full width of the container */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    margin-top: 40px; /* Space above the image row */
+}
+
+.image-row img {
+    height: auto; /* Adjust height as needed */
+    max-width: 10%; /* Adjust width percentage to fit images across the screen */
+    flex: 1 0 auto; /* Allow images to grow and shrink as needed */
+}
