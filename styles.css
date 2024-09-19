@@ -11,18 +11,24 @@ body {
 
 #question-screen {
     text-align: center;
+    font-family: 'Rubik Mono One', sans-serif; /* Font for text on the first screen */
+}
+
+h1 {
+    font-size: 100px; /* Text size for the main heading */
 }
 
 button {
     margin: 10px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 65px; /* Font size for text in buttons */
     cursor: pointer;
     background-color: #E8E8E8; /* Option box background color */
     color: #323131; /* Text color in option boxes */
     border: none;
     border-radius: 5px; /* Optional: To make the buttons look nicer */
     transition: all 0.3s ease; /* Smooth transition for all properties */
+    font-family: 'Satisfy', cursive; /* Font for buttons */
 }
 
 button:hover {
@@ -52,6 +58,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px; /* Increase space between the two sentences */
 }
 
 #text-content h2 {
@@ -64,7 +71,7 @@ button:hover {
     border-right: 0.15em solid #FFFFFF; /* Cursor effect */
     white-space: nowrap; /* Prevent text from wrapping */
     overflow: hidden; /* Hide overflow */
-    animation: typewriter 6s steps(40, end) 1s infinite, pause 8s 6s infinite; /* Infinite typewriter effect with pause */
+    animation: typewriter 6s steps(40, end) infinite, pause 8s 6s infinite; /* Infinite typewriter effect with pause */
 }
 
 @keyframes typewriter {
