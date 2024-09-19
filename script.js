@@ -27,4 +27,12 @@ option2.addEventListener("click", function() {
 
     // Play the background music
     backgroundMusic.play();
+
+    // Trigger confetti with custom settings
+    confetti({
+        particleCount: 300,   // 300 particles for decent coverage
+        spread: 135,          // Spread of 120-150 for wide screen coverage
+        origin: { y: 0.6 },   // Confetti starts from a bit lower than the top
+        colors: ['#ff0000', '#00ff00', '#0000ff'], // Red, Green, and Blue confetti colors
+    });
 });
