@@ -30,7 +30,7 @@ button:hover {
 }
 
 #next-screen {
-    background-color: #FF69B4; /* background color */
+    background-color: #303D6F; /* background color */
     color: #FFFFFF; /* Text color to contrast with the hot pink background */
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
