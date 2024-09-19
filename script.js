@@ -26,11 +26,13 @@ option2.addEventListener("click", function() {
     nextScreen.style.display = "block"; // Show the next screen
 
     // Play the background music
-    backgroundMusic.play();
+    careless.play().catch(error => {
+        console.error("Error playing audio:", error);
+    });
 
     // Trigger confetti with custom settings
     confetti({
-        particleCount: 300,   // 3000 particles for decent coverage
+        particleCount: 300,   // 300 particles for decent coverage
         spread: 135,          // Spread of 120-150 for wide screen coverage
         origin: { y: 0.6 },   // Confetti starts from a bit lower than the top
         colors: ['#ff0000', '#00ff00', '#0000ff'], // Red, Green, and Blue confetti colors
