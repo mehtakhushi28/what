@@ -28,7 +28,6 @@ button {
     border: none;
     border-radius: 5px; /* Optional: To make the buttons look nicer */
     transition: all 0.3s ease; /* Smooth transition for all properties */
-    font-family: 'Satisfy', cursive; /* Font for buttons */
 }
 
 button:hover {
