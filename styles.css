@@ -30,20 +30,20 @@ button:hover {
 }
 
 #next-screen {
-    text-align: center;
-    background-color: #FF69B4; /* Hot pink background color */
-    color: #FFFFFF; /* Optional: Text color to contrast with the hot pink background */
+    background-color: #303D6F; /* Hot pink background color */
+    color: #FFFFFF; /* Text color to contrast with the hot pink background */
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
     display: flex; /* Flexbox for centering content */
     flex-direction: column; /* Stack elements vertically */
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
     position: absolute;
     top: 0;
     left: 0;
     overflow: hidden; /* To hide any overflow of moving text */
     padding: 20px; /* Padding for some spacing around the content */
+    box-sizing: border-box; /* Include padding in width and height */
 }
 
 #next-screen h2 {
