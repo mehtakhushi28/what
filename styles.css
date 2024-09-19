@@ -79,12 +79,18 @@ button:hover {
     100% { width: 100%; }
 }
 
-.image-row {
+.image-row-wrapper {
     display: flex;
     width: 100%; /* Full width of the container */
     overflow: hidden; /* Hide overflow */
     margin-top: 40px; /* Space above the image row */
-    white-space: nowrap; /* Prevent images from wrapping to the next line */
+    position: relative;
+}
+
+.image-row {
+    display: flex;
+    width: 200%; /* Double the width of the image row to allow scrolling */
+    animation: scroll-left 30s linear infinite; /* Animation properties */
 }
 
 .image-row img {
@@ -99,13 +105,6 @@ button:hover {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
-}
-
-/* Apply animation to the image row */
-.image-row-wrapper {
-    display: flex;
-    width: 200%; /* Double the width of the image row to allow scrolling */
-    animation: scroll-left 30s linear infinite; /* Animation properties */
 }
