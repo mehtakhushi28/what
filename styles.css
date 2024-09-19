@@ -56,14 +56,15 @@ button:hover {
 
 #text-content h2 {
     font-size: 2.5em; /* Adjust the size as needed */
-    margin-bottom: 20px; /* Space between heading and paragraph */
+    margin-bottom: 20px; /* Space between heading and text */
 }
 
 .typewriter {
     font-size: 2em; /* Increase the size of the text */
-    display: inline-block;
-    animation: typewriter 6s steps(40, end) 1 normal both, pause 8s 6s forwards; /* Typewriter effect with pause */
+    border-right: 0.15em solid #FFFFFF; /* Cursor effect */
     white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow */
+    animation: typewriter 6s steps(40, end) 1s 1 normal both, pause 8s 6s forwards; /* Typewriter effect with pause */
 }
 
 @keyframes typewriter {
