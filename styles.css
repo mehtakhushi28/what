@@ -81,15 +81,40 @@ button:hover {
 
 .image-row {
     display: flex;
-    justify-content: space-between; /* Distribute space between images */
+    justify-content: flex-start; /* Align images to the start of the row */
     flex-wrap: nowrap; /* Prevent wrapping */
     width: 100%; /* Full width of the container */
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Ensure positioning context for animation */
     margin-top: 40px; /* Space above the image row */
 }
 
 .image-row img {
     height: auto; /* Adjust height as needed */
-    max-width: 10%; /* Adjust width percentage to fit images across the screen */
+    max-width: 5.5%; /* Adjust width percentage to fit 18 images across the screen */
     flex: 1 0 auto; /* Allow images to grow and shrink as needed */
+}
+
+/* Keyframes for horizontal scrolling animation */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Apply animation to the image row */
+.image-row::before {
+    content: ""; /* Clear content to use as a repeating background */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200%; /* Double the width of the image row */
+    background-image: linear-gradient(to right, transparent, transparent 50%, #303D6F 50%, #303D6F 50%, transparent 50%);
+    background-repeat: repeat-x;
+    z-index: -1; /* Place it behind the images */
+    animation: scroll-left 30s linear infinite; /* Animation properties */
 }
