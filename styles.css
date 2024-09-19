@@ -23,7 +23,6 @@ button {
     margin: 10px;
     padding: 10px 20px;
     font-size: 37px; /* Font size for text in buttons */
-    cursor: url('pixel-heart.png') 16 16, auto; /* Red heart cursor */
     background-color: #E8E8E8; /* Option box background color */
     color: #323131; /* Text color in option boxes */
     border: none;
