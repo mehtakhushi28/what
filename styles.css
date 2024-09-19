@@ -15,13 +15,13 @@ body {
 }
 
 h1 {
-    font-size: 100px; /* Text size for the main heading */
+    font-size: 62px; /* Text size for the main heading */
 }
 
 button {
     margin: 10px;
     padding: 10px 20px;
-    font-size: 65px; /* Font size for text in buttons */
+    font-size: 37px; /* Font size for text in buttons */
     cursor: pointer;
     background-color: #E8E8E8; /* Option box background color */
     color: #323131; /* Text color in option boxes */
