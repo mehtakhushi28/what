@@ -32,7 +32,7 @@ option2.addEventListener("click", function() {
     confetti({
         particleCount: 3000,   // 3000 particles for decent coverage
         spread: 135,          // Spread of 120-150 for wide screen coverage
-        origin: { y: 0.6 },   // Confetti starts from a bit lower than the top
+        origin: { x: 0.6 },   // Confetti starts from a bit lower than the top
         colors: ['#ff0000', '#00ff00', '#0000ff'], // Red, Green, and Blue confetti colors
     });
 });
