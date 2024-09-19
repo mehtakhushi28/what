@@ -32,9 +32,9 @@ option2.addEventListener("click", function() {
 
     // Trigger confetti with custom settings
     confetti({
-        particleCount: 300,   // 300 particles for decent coverage
+        particleCount: 700,   // 300 particles for decent coverage
         spread: 135,          // Spread of 120-150 for wide screen coverage
         origin: { y: 0.6 },   // Confetti starts from a bit lower than the top
-        colors: ['#ff0000', '#00ff00', '#0000ff'], // Red, Green, and Blue confetti colors
+        colors: ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FFC0CB', '#FFA500', '#FFD700', '#C0C0C0'], // Red, Green, and Blue confetti colors
     });
 });
