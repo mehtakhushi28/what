@@ -71,7 +71,7 @@ button:hover {
     border-right: 0.15em solid #FFFFFF; /* Cursor effect */
     white-space: nowrap; /* Prevent text from wrapping */
     overflow: hidden; /* Hide overflow */
-    animation: typewriter 6s steps(40, end) infinite, pause 8s 6s infinite; /* Infinite typewriter effect with pause */
+    animation: typewriter 6s steps(40, end) 1s infinite, pause 8s 15s infinite; /* Infinite typewriter effect with pause */
 }
 
 @keyframes typewriter {
