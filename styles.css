@@ -56,14 +56,14 @@ button:hover {
 #next-screen h2 {
     font-size: 2.5em; /* Adjust the size as needed */
     display: inline-block;
-    animation: typewriter 4s steps(40, end) infinite; /* Typewriter effect */
+    animation: typewriter 9s steps(40, end) infinite; /* Typewriter effect */
     margin-bottom: 20px; /* Space between heading and paragraph */
 }
 
 #next-screen p {
     font-size: 2em; /* Increase the size of the paragraph text */
     display: inline-block;
-    animation: typewriter 6s steps(40, end) infinite; /* Typewriter effect */
+    animation: typewriter 10s steps(40, end) infinite; /* Typewriter effect */
     margin-top: 20px; /* Space between heading and paragraph */
 }
 
