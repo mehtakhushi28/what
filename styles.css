@@ -51,23 +51,27 @@ button:hover {
 #next-screen h2, #next-screen p {
     overflow: hidden;
     white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation: typewriter 6s steps(40, end) 1s 1 normal both, pause 8s 6s forwards; /* Adjust timing and add pause */
 }
 
 #next-screen h2 {
     font-size: 2.5em; /* Adjust the size as needed */
-    display: inline-block;
-    animation: typewriter 9s steps(40, end) infinite; /* Typewriter effect */
     margin-bottom: 20px; /* Space between heading and paragraph */
 }
 
 #next-screen p {
     font-size: 2em; /* Increase the size of the paragraph text */
-    display: inline-block;
-    animation: typewriter 10s steps(40, end) infinite; /* Typewriter effect */
     margin-top: 20px; /* Space between heading and paragraph */
 }
 
 @keyframes typewriter {
     from { width: 0; }
     to { width: 100%; }
+}
+
+@keyframes pause {
+    0% { opacity: 1; }
+    100% { opacity: 1; }
 }
