@@ -31,4 +31,27 @@ button:hover {
 
 #next-screen {
     text-align: center;
+    background-color: #FFC0CB; /* Pink background color */
+    padding: 20px;
+    position: relative;
+}
+
+#next-screen h2, #next-screen p {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes slide {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+#next-screen h2 {
+    display: inline-block;
+    animation: slide 10s linear infinite;
+}
+
+#next-screen p {
+    display: inline-block;
+    animation: slide 15s linear infinite;
 }
