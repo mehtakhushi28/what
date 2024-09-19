@@ -26,7 +26,7 @@ option2.addEventListener("click", function() {
     nextScreen.style.display = "block"; // Show the next screen
 
     // Play the background music
-    careless.play().catch(error => {
+    backgroundMusic.play().catch(error => {
         console.error("Error playing audio:", error);
     });
 
