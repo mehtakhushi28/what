@@ -30,7 +30,7 @@ button:hover {
 }
 
 #next-screen {
-    background-color: #303D6F; /* Hot pink background color */
+    background-color: #FF69B4; /* background color */
     color: #FFFFFF; /* Text color to contrast with the hot pink background */
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
@@ -44,22 +44,24 @@ button:hover {
     overflow: hidden; /* To hide any overflow of moving text */
     padding: 20px; /* Padding for some spacing around the content */
     box-sizing: border-box; /* Include padding in width and height */
+    text-align: center; /* Ensure text is centered within its container */
+}
+
+#next-screen h2, #next-screen p {
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 #next-screen h2 {
-    overflow: hidden;
-    white-space: nowrap;
     font-size: 2em; /* Adjust the size as needed */
     display: inline-block;
     animation: slide 10s linear infinite;
 }
 
 #next-screen p {
-    overflow: hidden;
-    white-space: nowrap;
     font-size: 1.5em; /* Increase the size of the paragraph text */
     display: inline-block;
-    animation: slide 15s linear infinite;
+    animation: slide 12s linear infinite;
     margin-top: 20px; /* Increase space between heading and paragraph */
 }
 
