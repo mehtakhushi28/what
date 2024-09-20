@@ -23,7 +23,6 @@ button {
     margin: 10px;
     padding: 10px 20px;
     font-size: 37px; /* Font size for text in buttons */
-    cursor: url('pixel-heart.png') 16 16, auto; /* Red heart cursor */
     background-color: #E8E8E8; /* Option box background color */
     color: #323131; /* Text color in option boxes */
     border: none;
@@ -91,16 +90,15 @@ button:hover {
 .image-row {
     display: flex;
     width: 200%; /* Double the width of the image row to allow scrolling */
-    animation: scroll-left 30s linear infinite; /* Animation properties */
 }
 
 .image-row img {
     height: auto; /* Adjust height as needed */
-    width: 5.5%; /* Adjust width percentage to fit 18 images across the screen */
+    width: 5.5%; /* Adjust width percentage to fit 29 images across the screen */
     flex-shrink: 0; /* Prevent images from shrinking */
 }
 
-/* Keyframes for horizontal scrolling animation */
+/* Keyframes for horizontal scrolling animation to the left */
 @keyframes scroll-left {
     0% {
         transform: translateX(0);
@@ -108,4 +106,24 @@ button:hover {
     100% {
         transform: translateX(-50%);
     }
+}
+
+/* Keyframes for horizontal scrolling animation to the right */
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Apply the left scrolling animation */
+.scroll-left {
+    animation: scroll-left 30s linear infinite;
+}
+
+/* Apply the right scrolling animation */
+.scroll-right {
+    animation: scroll-right 30s linear infinite;
 }
