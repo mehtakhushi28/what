@@ -74,17 +74,12 @@ button:hover {
     animation: typewriter 6s steps(40, end) 1s infinite alternate; /* Typewriter effect with pause */
 }
 
-/* Typewriter keyframe */
-@keyframes typewriter {
-    0% { width: 0; }
-    100% { width: 100%; }
-}
-
+/* Image row container */
 .image-row-wrapper {
     display: flex;
     width: 100%; /* Full width of the container */
     overflow: hidden; /* Hide overflow */
-    margin-top: 40px; /* Space above the image row */
+    margin-top: 40px; /* Space above each image row */
     position: relative;
 }
 
@@ -112,19 +107,18 @@ button:hover {
 /* Keyframes for horizontal scrolling animation to the right */
 @keyframes scroll-right {
     0% {
-        transform: translateX(-50%);
-    }
-    100% {
         transform: translateX(0);
     }
+    100% {
+        transform: translateX(50%);
+    }
 }
 
-/* Apply the left scrolling animation */
+/* Apply the scrolling animation to image rows */
 .scroll-left {
-    animation: scroll-left 30s linear infinite;
+    animation: scroll-left 20s linear infinite;
 }
 
-/* Apply the right scrolling animation */
 .scroll-right {
-    animation: scroll-right 30s linear infinite;
+    animation: scroll-right 20s linear infinite;
 }
